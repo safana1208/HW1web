@@ -1,13 +1,25 @@
+/* בסיס */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
   }
   
+  a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #9b59b6;
+  }
+  
+  /* כותרת ראשית */
   .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 15px 30px;
     border-bottom: 2px solid #ddd;
   }
@@ -17,6 +29,8 @@ body {
     font-weight: bold;
     color: #333;
   }
+  
+  /* ניווט */
   .nav-menu ul {
     list-style: none;
     display: flex;
@@ -28,32 +42,13 @@ body {
     display: inline-block;
   }
   
-  /* מרווחים מותאמים אישית לפי הסדר */
-  .nav-menu li:nth-child(1) {
-    margin-left: 135px; /* מרווח מהלוגו ל-Home */
-  }
-  
-  .nav-menu li:nth-child(2) {
-    margin-left: 62px; /* מרווח מ-Home ל-Our Catsiverse */
-  }
-  
-  .nav-menu li:nth-child(3) {
-    margin-left: 64px; /* מרווח מ-Our Catsiverse ל-About */
-  }
-  
-  .nav-menu li:nth-child(4) {
-    margin-left: 64px; /* מרווח מ-About ל-Contact */
-  }
+  .nav-menu li:nth-child(1) { margin-left: 135px; }
+  .nav-menu li:nth-child(2) { margin-left: 62px; }
+  .nav-menu li:nth-child(3) { margin-left: 64px; }
+  .nav-menu li:nth-child(4) { margin-left: 64px; }
   
   .nav-menu a {
-    text-decoration: none;
-    color: #333;
     font-size: 30px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-menu a:hover {
-    color: #9b59b6;
   }
   
   .nav-menu a.active {
@@ -61,218 +56,79 @@ body {
     border-bottom: 2px solid #9b59b6;
   }
   
-  .site-footer {
-    background-color: #f8f8f8;
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 80px;
-    border-top: 2px solid #ddd;
-    position: relative;
-    bottom: 0;
+  /* Hero Section */
+  .hero-section {
     width: 100%;
-  }
-  
-  .footer-column {
+    height: 100vh;
+    background-image: url('../images/cat-hero.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-column h3 {
-    font-size: 18px;
-    margin-bottom: 16px; /* רווח בין הכותרת ל־About */
-    color: #333;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-column li {
-    margin-bottom: 8px; /* רווח בין About ל־Team ול־Work With Us */
-  }
-  
-  .footer-column a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-column a:hover {
-    color: #9b59b6;
-  }
-  
-  .social-icons {
-    display: flex;
-    margin-top: 16px;
-  }
-  
-  .social-icons a {
-    margin-right: 24px;
-  }
-  
-  .social-icons a:last-child {
-    margin-right: 0;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .icons-line {
-    list-style: none;
-  }
-  
-  .footer-section {
-    background-color: #EFECFF;
-    padding: 40px 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section li {
-    margin-bottom: 8px;
-  }
-  
-  .social-icons {
-    display: flex;
-    margin-top: 16px;
-    margin-left: 32px;
-  }
-  
-  .social-icons a {
-    margin-right: 24px;
-  }
-  
-  .social-icons a:last-child {
-    margin-right: 0;
-  }
-  
-  .icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .footer-column .copyright {
-    font-size: 14px;
-    margin: 0;
-    color: #333;
-  }
-  
-  .site-footer {
-    background-color: #EFECFF;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 14px;
-    color: #333;
-    margin-top: 40px;
-  }
-
-  .footer-section {
-    background-color: #EFECFF;
-    display: flex;
+    align-items: flex-start;
     justify-content: flex-start;
-    gap: 150px;
-    padding: 40px 60px;
-    flex-wrap: wrap;
+    padding: 64px 80px 0 80px;
+    color: white;
+    position: relative;
   }
   
-  .footer-column {
-    display: flex;
-    flex-direction: column;
-  } 
-  .footer-column h3 {
-    font-size: 18px;
-    margin: 0;
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
   }
   
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 16px 0 0 0; /* 16px מהרשימה אל הכותרת */
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: left;
   }
   
-  .footer-column li {
-    margin-bottom: 8px; /* רווח בין הפריטים: 8px */
+  .hero-content h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
   
-  .footer-column a {
-    text-decoration: none;
-    color: #333;
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  /* אודות המוצר */
+  .about-product {
+    padding: 60px 120px;
+    background-color: #fff;
+    text-align: left;
+  }
+  
+  .about-product .subheading {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #612999;
+  }
+  
+  .about-text p {
     font-size: 16px;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-column a:hover {
-    color: #9b59b6;
-  }
-
-  .footer {
-    display: flex;
-    background-color: #EFECFF;
-    padding: 40px 60px;
-    gap: 150px; /* רווח בין העמודות */
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    color: #333;
-  }
-  
-  .column h3 {
-    font-size: 18px;
+    line-height: 1.6;
     margin-bottom: 16px;
+    color: #555;
   }
   
-  .column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .column ul li {
-    margin-bottom: 8px;
-    font-size: 16px;
-  }
-  
-  .column ul li.first {
-    margin-top: 16px;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 24px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .copyright {
-    font-size: 14px;
-    margin: 0;
-  }
+  /* פוטר */
   .site-footer {
     background-color: #EFECFF;
     padding: 40px 60px;
+    margin-top: 40px;
+    color: #333;
   }
   
   .footer-container {
     display: flex;
-    gap: 150px; /* רווח בין העמודות */
+    gap: 150px;
+    flex-wrap: wrap;
   }
   
   .footer-column {
@@ -292,10 +148,9 @@ body {
     margin: 0;
   }
   
-  .footer-column ul li {
+  .footer-column li {
     margin-bottom: 8px;
     font-size: 16px;
-    color: #333;
   }
   
   .footer-column ul li.first {
@@ -303,8 +158,7 @@ body {
   }
   
   .footer-column a {
-    text-decoration: none;
-    color: #333;
+    font-size: 16px;
   }
   
   .social-icons {
@@ -312,17 +166,102 @@ body {
     gap: 24px;
     margin-top: 16px;
     margin-bottom: 16px;
+    margin-left: 32px;
   }
   
+  .social-icons img,
   .social-icons .icon {
     width: 24px;
     height: 24px;
   }
   
+  .footer-column .copyright,
   .copyright {
     font-size: 14px;
     margin: 0;
     color: #333;
   }
   
+  .products {
+    display: flex;
+    flex-wrap: wrap; /* מאפשר למוצרים להתפשט לשורות */
+    gap: 20px; /* רווח בין ה-cards */
+    justify-content: flex-start; /* מיישר את ה-cards מתחילת השורה */
+    margin-top: 40px; /* רווח מעל המוצרים */
+    padding-bottom: 32px; /* רווח תחתון לפני הפוטר */
+    overflow-y: auto; /* מאפשר גלילה אנכית אם יש יותר מדי פריטים */
+    max-height: calc(100vh - 100px); /* גובה מקסימלי של המקטע (לפי גובה המסך) */
+  }
+  
+  
+  .product-card {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .product-image {
+    position: relative;
+  }
+  
+  .product-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .heart-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+  }
+  
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add-to-cart img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  /* רספונסיביות - שינוי מספר ה-cards בשורה */
+  @media (min-width: 768px) {
+    .product-card {
+      width: 48%; /* 2 cards בשורה */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .product-card {
+      width: 23%; /* 4 cards בשורה */
+    }
+  }
   
