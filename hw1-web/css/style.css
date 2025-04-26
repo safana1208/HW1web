@@ -46,11 +46,13 @@ body {
   
   .nav-menu a {
     font-size: 30px;
+    color: #612999;
+    text-decoration: none;
   }
   
   .nav-menu a.active {
     font-weight: bold;
-    border-bottom: 2px solid #9b59b6;
+    border-bottom: 2px solid #612999;
   }
   
  
@@ -66,8 +68,8 @@ body {
     padding: 64px 80px 0 80px;
     color: white;
     position: relative;
-  }
-  
+    text-align: left;
+}
   .hero-section::before {
     content: "";
     position: absolute;
@@ -83,16 +85,17 @@ body {
     text-align: left;
   }
   
-  .hero-content h1 {
-    font-size: 72px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
+  .hero-section h1 {
+    font-size: 96px;
+    color: #612999;
+    margin: 0;
+}
   
-  .hero-content p {
-    font-size: 20px;
-    line-height: 1.6;
-  }
+  .hero-section p {
+    font-size: 24px;
+    color: #000000;
+    margin-top: 10px;
+}
   
   .about-product {
     padding: 60px 120px;
@@ -391,5 +394,15 @@ body {
     list-style-type: disc;
     padding-left: 20px;
     margin-top: 20px;
+  }
+  .list-under-gallery {
+    margin-top: 32px; 
+    text-align: left;
+  }
+  
+  .list-under-gallery p {
+    font-size: 40px;
+    color: #612999;
+    margin: 32px; 
   }
   
