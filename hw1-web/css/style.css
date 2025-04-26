@@ -1,4 +1,3 @@
-/* בסיס */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -14,7 +13,6 @@ body {
     color: #9b59b6;
   }
   
-  /* כותרת ראשית */
   .site-header {
     display: flex;
     justify-content: space-between;
@@ -27,10 +25,9 @@ body {
   .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #3E3F43;
   }
   
-  /* ניווט */
   .nav-menu ul {
     list-style: none;
     display: flex;
@@ -97,7 +94,6 @@ body {
     line-height: 1.6;
   }
   
-
   .about-product {
     padding: 60px 120px;
     background-color: #fff;
@@ -114,10 +110,9 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 16px;
-    color: #555;
+    color: #000000;
   }
   
-  /* פוטר */
   .site-footer {
     background-color: #EFECFF;
     padding: 40px 60px;
@@ -291,7 +286,6 @@ body {
     height: 32px;
   }
   
-  /* גלריה */
   .gallery-container {
     display: flex;
     justify-content: center;
@@ -301,7 +295,7 @@ body {
   }
   
   .gallery-item {
-    border: 5px solid #E6DBFE; /* צבע המסגרת */
+    border: 5px solid #E6DBFE;
     border-radius: 24px;
     padding: 8px;
     background-color: #fff;
@@ -310,24 +304,21 @@ body {
     align-items: center;
   }
   
-  /* עיצוב תמונות */
   .gallery-item img {
     height: 300px;
     object-fit: cover;
     border-radius: 16px;
   }
   
-  /* התמונות הקטנות */
   .gallery-item:not(.wide) img {
     width: 300px;
   }
   
-  /* התמונה הרחבה באמצע */
+
   .gallery-item.wide img {
     width: 388px;
   }
   
-  /* אזור הרשימה */
 .features-section {
     padding: 60px 80px;
     background-color: #fff;
@@ -362,18 +353,18 @@ body {
   .custom-section {
     padding: 60px 80px;
     background-color: #fff;
-    text-align: left; /* הכותרת והסרטון יתחילו מהצד השמאלי */
+    text-align: left;
   }
   
   .custom-section h2 {
     font-size: 28px;
-    color: #5D3FD3; /* צבע סגלגל תואם */
+    color: #5D3FD3;
     margin-bottom: 24px;
   }
   
   .custom-section iframe {
-    border-radius: 16px; /* אם את רוצה פינות מעוגלות לסרטון */
-    max-width: 100%; /* כדי שבמסכים קטנים זה יקטן אוטומטית */
+    border-radius: 16px;
+    max-width: 100%;
   }
   
   .products-table {
@@ -394,5 +385,11 @@ body {
   
   .products-table td {
     background-color: #fff;
+  }
+  .items-list {
+    color: #612999;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
   }
   
