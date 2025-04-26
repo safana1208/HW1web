@@ -359,3 +359,40 @@ body {
     color: #333;
   }
   
+  .custom-section {
+    padding: 60px 80px;
+    background-color: #fff;
+    text-align: left; /* הכותרת והסרטון יתחילו מהצד השמאלי */
+  }
+  
+  .custom-section h2 {
+    font-size: 28px;
+    color: #5D3FD3; /* צבע סגלגל תואם */
+    margin-bottom: 24px;
+  }
+  
+  .custom-section iframe {
+    border-radius: 16px; /* אם את רוצה פינות מעוגלות לסרטון */
+    max-width: 100%; /* כדי שבמסכים קטנים זה יקטן אוטומטית */
+  }
+  
+  .products-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  .products-table th, .products-table td {
+    border: 1px solid #E6DBFE;
+    padding: 12px;
+  }
+  
+  .products-table th {
+    background-color: #E6DBFE;
+    color: #333;
+  }
+  
+  .products-table td {
+    background-color: #fff;
+  }
+  
