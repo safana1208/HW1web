@@ -1,0 +1,361 @@
+/* בסיס */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #9b59b6;
+  }
+  
+  /* כותרת ראשית */
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* ניווט */
+  .nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+  }
+  
+  .nav-menu li:nth-child(1) { margin-left: 135px; }
+  .nav-menu li:nth-child(2) { margin-left: 62px; }
+  .nav-menu li:nth-child(3) { margin-left: 64px; }
+  .nav-menu li:nth-child(4) { margin-left: 64px; }
+  
+  .nav-menu a {
+    font-size: 30px;
+  }
+  
+  .nav-menu a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #9b59b6;
+  }
+  
+ 
+  .hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/cat-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 64px 80px 0 80px;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .hero-content h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+
+  .about-product {
+    padding: 60px 120px;
+    background-color: #fff;
+    text-align: left;
+  }
+  
+  .about-product .subheading {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: #612999;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #555;
+  }
+  
+  /* פוטר */
+  .site-footer {
+    background-color: #EFECFF;
+    padding: 40px 60px;
+    margin-top: 40px;
+    color: #333;
+  }
+  
+  .footer-container {
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .footer-column ul li.first {
+    margin-top: 16px;
+  }
+  
+  .footer-column a {
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+  }
+  
+  .social-icons img,
+  .social-icons .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-column .copyright,
+  .copyright {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+  }
+  
+.products-section {
+    padding: 60px 80px;
+    background-color: #fff;
+  }
+  
+  .section-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .section-title {
+    font-size: 40px; 
+    color: #612999;
+    margin: 0;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: #efecff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 376px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 24px;
+  }
+  
+  .card-image {
+    position: relative;
+  }
+  
+  .card-image img:first-child {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 47px;
+    height: 47px;
+  }
+  
+  
+  .product-title {
+    font-size: 30px;
+    width: 221px;
+    height: 38px;
+    margin: 16px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .product-description {
+    font-size: 18px;
+    color: #333333;
+    margin: 0 16px 16px 16px;
+    line-height: 1.5;
+  }
+  
+  
+  .card-footer {
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 35px;
+    color: #612999;
+    width: 136px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .cart-icon {
+    width: 63px;
+    height: 63px;
+    cursor: pointer;
+  }
+  
+    .products-section {
+    margin-bottom: 246px;
+  }
+ /* רווח של 32px אחרי הלוגו */
+.space-32 {
+    height: 32px;
+  }
+  
+  /* גלריה */
+  .gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 80px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item {
+    border: 5px solid #E6DBFE; /* צבע המסגרת */
+    border-radius: 24px;
+    padding: 8px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* עיצוב תמונות */
+  .gallery-item img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+  
+  /* התמונות הקטנות */
+  .gallery-item:not(.wide) img {
+    width: 300px;
+  }
+  
+  /* התמונה הרחבה באמצע */
+  .gallery-item.wide img {
+    width: 388px;
+  }
+  
+  /* אזור הרשימה */
+.features-section {
+    padding: 60px 80px;
+    background-color: #fff;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+  }
+  
+  .features-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .features-list img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .features-list span {
+    font-size: 20px;
+    color: #333;
+  }
+  
