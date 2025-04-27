@@ -1,5 +1,6 @@
-body {
-    margin: 0;
+*{
+    margin: 0px;
+    padding: 0px;
     font-family: 'Arial', sans-serif;
   }
   
@@ -31,8 +32,7 @@ body {
   .nav-menu ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
+    margin-right: 200px;
   }
   
   .nav-menu li {
@@ -92,9 +92,14 @@ body {
 }
   
   .hero-section p {
-    font-size: 24px;
     color: #000000;
     margin-top: 10px;
+    font-family: 'Nunito';
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+
 }
   
   .about-product {
@@ -104,16 +109,20 @@ body {
   }
   
   .about-product .subheading {
-    font-size: 28px;
+    font-size: 40px;
     margin-bottom: 24px;
     color: #612999;
   }
   
   .about-text p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    color: #000000;
+    font-family: 'Rubik';
+font-weight: 400;
+font-size: 20px;
+line-height: 141%;
+letter-spacing: 0%;
+text-align: justify;
+
+
   }
   
   .site-footer {
@@ -164,7 +173,6 @@ body {
     gap: 24px;
     margin-top: 16px;
     margin-bottom: 16px;
-    margin-left: 32px;
   }
   
   .social-icons img,
@@ -238,22 +246,27 @@ body {
   
   
   .product-title {
-    font-size: 30px;
-    width: 221px;
-    height: 38px;
-    margin: 16px;
-    color: #333;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+      width: 221px;
+      height: 38px;
+      margin: 16px;
+      font-family: Abel;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-align: justify;
+      
   }
   
   
   .product-description {
-    font-size: 18px;
-    color: #333333;
-    margin: 0 16px 16px 16px;
-    line-height: 1.5;
+      margin: 0 16px 16px 16px;
+      font-family: Abel;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      
   }
   
   
@@ -265,13 +278,13 @@ body {
   }
   
   .price {
-    font-weight: bold;
-    font-size: 35px;
-    color: #612999;
-    width: 136px;
-    height: 45px;
-    display: flex;
-    align-items: center;
+    font-family: Abel;
+font-weight: 400;
+font-size: 35px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: justify;
+color: #612999;
   }
   
   
@@ -322,8 +335,13 @@ body {
     width: 388px;
   }
   
+.wrapper{
+    margin: 0px auto;
+    max-width: 1200px;
+}
+
 .features-section {
-    padding: 60px 80px;
+    margin-left: 32px;
     background-color: #fff;
   }
   
@@ -349,8 +367,24 @@ body {
   }
   
   .features-list span {
-    font-size: 20px;
-    color: #333;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 14px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+  }
+
+  .features-list .icon-bg{
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background-color: #612999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
   
   .custom-section {
@@ -406,3 +440,18 @@ body {
     margin: 32px; 
   }
   
+  .choise {
+    margin-top: 32px;
+    margin-left: 32px;
+  }
+
+  .choise h2 {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    color: #612999;
+    margin-bottom: 32px;
+  }
+
